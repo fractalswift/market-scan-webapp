@@ -148,7 +148,11 @@ class ArbMatrix extends Component {
   };
 
   renderCell = (fromPrice, toPrice) => {
-    let spread = Math.round(fromPrice - toPrice);
+    let spread = Math.round((fromPrice - toPrice) * 10) / 10;
+
+    if (Number.isNaN(spread)) {
+      spread = 'Waiting...';
+    }
 
     let cellColor = 'black';
     if (spread < 0) {
@@ -169,7 +173,7 @@ class ArbMatrix extends Component {
           padding: '14px',
           fontFamily: 'Tahoma',
           fontWeight: 'bold',
-          fontSize: '2vh',
+          fontSize: '14px',
           color: 'white',
         }}
       >
