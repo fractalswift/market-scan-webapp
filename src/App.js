@@ -11,6 +11,7 @@ import FixedNav from './components/FixedNav';
 import LiquidityMonitor from './routes/LiquidityMonitor.js';
 import Arbitrage from './routes/Arbitrage';
 import Home from './routes/Home';
+import PairsScanner from './routes/PairsScanner';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
             </Route>
             <Route path='/Arbitrage'>
               <Arbitrage />
+            </Route>
+            <Route path='/PairsScanner'>
+              <PairsScanner />
             </Route>
             <Route path='/'>
               <Home />

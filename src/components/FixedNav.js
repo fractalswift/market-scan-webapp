@@ -20,7 +20,7 @@ function FixedNav() {
       <Nav className='mr-auto justify-content-end'>
         <Nav.Link href='/'>Home</Nav.Link>
         <Nav.Link href='/LiquidityMonitor'>Liquidity Monitor</Nav.Link>
-        <Nav.Link href='#'>Pairs Scanner</Nav.Link>
+        <Nav.Link href='/PairsScanner'>Pairs Scanner</Nav.Link>
         <Nav.Link href='/Arbitrage'>Arbitrage</Nav.Link>
         <Nav.Link href='#'>News</Nav.Link>
       </Nav>
